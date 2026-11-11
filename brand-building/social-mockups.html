@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Verdé — Social Launch Mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--fern:#3f7d4e;--forest:#24402b;--terra:#c8724a;--cream:#f3efe6;--sage:#cdd9c3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#e7e2d6;color:var(--forest);padding:2rem 1rem}
+  h1{text-align:center;font-family:'Fraunces'}
+  .sub{text-align:center;color:#6f6a5c;margin:.3rem 0 2rem}
+  .grid{display:flex;flex-wrap:wrap;gap:1.6rem;justify-content:center}
+  .label{text-align:center;font-size:.82rem;color:#6f6a5c;margin-top:.5rem}
+  .post{width:300px;height:300px;border-radius:14px;overflow:hidden;box-shadow:0 14px 30px -14px rgba(0,0,0,.35);display:flex;flex-direction:column;position:relative}
+  .pad{padding:1.5rem;display:flex;flex-direction:column;height:100%}
+  .brand{font-family:'Fraunces';font-weight:700;font-size:1.2rem}
+  .leaf{font-size:3rem;text-align:center;margin:auto 0}
+  /* reveal */
+  .reveal{background:var(--fern);color:var(--cream)}
+  .reveal .big{font-family:'Fraunces';font-size:2.4rem;margin-top:auto}
+  .reveal .tag{letter-spacing:5px;font-size:.8rem;color:var(--sage);margin-top:.3rem}
+  /* educate */
+  .edu{background:var(--cream)}
+  .edu .k{color:var(--terra);font-weight:700;font-size:.8rem;letter-spacing:.1em}
+  .edu h2{font-family:'Fraunces';color:var(--forest);font-size:1.7rem;margin-top:.4rem;line-height:1.1}
+  .edu ul{margin-top:auto;list-style:none;display:grid;gap:.5rem}
+  .edu li{background:#fff;border:1px solid var(--sage);border-radius:8px;padding:.5rem .7rem;font-size:.85rem}
+  /* product */
+  .prod{background:var(--sage)}
+  .prod .leaf{font-size:4rem}
+  .prod h2{font-family:'Fraunces';font-size:1.6rem;color:var(--forest)}
+  .prod .price{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+  .prod .price b{font-family:'Fraunces';font-size:1.6rem;color:var(--fern)}
+  .prod .pill{background:var(--terra);color:#fff;font-size:.78rem;font-weight:700;padding:.4rem .8rem;border-radius:999px}
+  /* giveaway */
+  .give{background:var(--forest);color:var(--cream)}
+  .give .big{font-family:'Fraunces';font-size:2rem;margin-top:auto}
+  .give .tag{color:var(--sage);font-size:.85rem;margin-top:.4rem}
+</style>
+</head>
+<body>
+<h1>Verdé — Social Launch Mockups</h1>
+<p class="sub">Instagram post concepts for launch week (HTML/CSS stand-ins for Canva designs)</p>
+<div class="grid">
+  <div>
+    <div class="post reveal"><div class="pad">
+      <div class="brand">🌱 Verdé</div>
+      <div class="leaf">🪴</div>
+      <div class="big">We're here.</div>
+      <div class="tag">GROW EASY</div>
+    </div></div>
+    <div class="label">Day 1 — Brand reveal</div>
+  </div>
+  <div>
+    <div class="post edu"><div class="pad">
+      <div class="brand">🌱 Verdé</div>
+      <div class="k">SAVE THIS</div>
+      <h2>3 plants you can't kill</h2>
+      <ul><li>🌿 Pothos — thrives on neglect</li><li>🪴 Snake plant — low light hero</li><li>🌵 ZZ plant — forgiving &amp; glossy</li></ul>
+    </div></div>
+    <div class="label">Day 3 — Educate (carousel)</div>
+  </div>
+  <div>
+    <div class="post prod"><div class="pad">
+      <div class="brand">🌱 Verdé</div>
+      <div class="leaf">🌿</div>
+      <h2>Golden Pothos</h2>
+      <div class="price"><b>1,200 L</b><span class="pill">NEW IN</span></div>
+    </div></div>
+    <div class="label">Day 5 — Product spotlight</div>
+  </div>
+  <div>
+    <div class="post give"><div class="pad">
+      <div class="brand">🌱 Verdé</div>
+      <div class="big">Win a<br>starter set 🎉</div>
+      <div class="tag">Follow + tag a friend to enter. Ends Sunday.</div>
+    </div></div>
+    <div class="label">Day 7 — Giveaway</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Verdé mark">
+  <circle cx="80" cy="80" r="76" fill="#3f7d4e"/>
+  <path d="M80 122 C80 90 88 58 116 46 C110 82 102 112 80 122 Z" fill="#cdd9c3"/>
+  <path d="M80 122 C80 90 72 58 44 46 C50 82 58 112 80 122 Z" fill="#eaf1e4"/>
+  <line x1="80" y1="122" x2="80" y2="58" stroke="#24402b" stroke-width="4" stroke-linecap="round"/>
+</svg>

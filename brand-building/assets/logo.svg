@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" width="420" height="160" role="img" aria-label="Verdé logo">
+  <rect width="420" height="160" fill="#f3efe6"/>
+  <!-- leaf mark in circle -->
+  <circle cx="80" cy="80" r="52" fill="#3f7d4e"/>
+  <path d="M80 112 C80 86 86 60 108 50 C104 78 98 104 80 112 Z" fill="#cdd9c3"/>
+  <path d="M80 112 C80 86 74 60 52 50 C56 78 62 104 80 112 Z" fill="#f3efe6"/>
+  <line x1="80" y1="112" x2="80" y2="62" stroke="#24402b" stroke-width="3" stroke-linecap="round"/>
+  <!-- wordmark -->
+  <text x="162" y="96" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700" fill="#24402b">Verd&#233;</text>
+  <!-- small leaf accent above the é -->
+  <path d="M300 34 C308 26 322 26 329 33 C320 38 308 40 300 34 Z" fill="#3f7d4e"/>
+  <text x="164" y="128" font-family="Arial, sans-serif" font-size="17" letter-spacing="6" fill="#c8724a">GROW EASY</text>
+</svg>

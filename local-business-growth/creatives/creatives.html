@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bloom Café — Sample Creatives</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--cream:#f4ece0;--brown:#5a3a22;--accent:#c58a3d;--green:#6b8e4e;--ink:#2b2018}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#e9e2d6;color:var(--ink);padding:2rem 1rem}
+  h1{text-align:center;font-family:'Fraunces';margin-bottom:.4rem}
+  .sub{text-align:center;color:#6b5d4d;margin-bottom:2rem}
+  .grid{display:flex;flex-wrap:wrap;gap:1.6rem;justify-content:center;align-items:flex-start}
+  .label{text-align:center;font-size:.82rem;color:#6b5d4d;margin-top:.5rem}
+  /* square IG post */
+  .post{width:300px;height:300px;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 14px 30px -14px rgba(0,0,0,.4);display:flex;flex-direction:column}
+  .p1{background:linear-gradient(160deg,#6b4226,#2b1a0f)}
+  .p2{background:var(--cream)}
+  .p3{background:linear-gradient(160deg,#6b8e4e,#3d5a2c)}
+  .post .pad{padding:1.4rem;display:flex;flex-direction:column;height:100%}
+  .brandline{font-family:'Fraunces';font-weight:700;letter-spacing:.03em}
+  .p1 .brandline,.p3 .brandline{color:#f4ece0}
+  .cup{font-size:3.4rem;text-align:center;margin:auto 0}
+  .p1 h2,.p3 h2{color:#fff;font-family:'Fraunces';font-size:1.5rem;line-height:1.1}
+  .p1 p,.p3 p{color:#e9ddcb;font-size:.82rem;margin-top:.4rem}
+  .p2 h2{color:var(--brown);font-family:'Fraunces';font-size:1.6rem;line-height:1.1}
+  .p2 .tagwrap{margin-top:auto}
+  .chip{display:inline-block;background:var(--accent);color:#fff;font-size:.72rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;align-self:flex-start}
+  .p2 .big{font-family:'Fraunces';font-size:2.2rem;color:var(--brown)}
+  /* flyer */
+  .flyer{width:300px;height:420px;background:var(--cream);border-radius:14px;overflow:hidden;box-shadow:0 14px 30px -14px rgba(0,0,0,.4);display:flex;flex-direction:column;text-align:center}
+  .flyer .top{background:linear-gradient(160deg,#6b4226,#2b1a0f);color:#f4ece0;padding:1.6rem 1.2rem}
+  .flyer .top .cup{font-size:2.6rem;margin:.2rem}
+  .flyer .top h2{font-family:'Fraunces';font-size:1.8rem}
+  .flyer .mid{padding:1.4rem 1.2rem;flex:1;display:flex;flex-direction:column;gap:.7rem;justify-content:center}
+  .flyer .offer{font-family:'Fraunces';font-size:1.3rem;color:var(--brown)}
+  .flyer .pill{background:var(--green);color:#fff;padding:.5rem 1rem;border-radius:999px;font-weight:700;font-size:.85rem;align-self:center}
+  .flyer .foot{background:var(--brown);color:#f4ece0;padding:.8rem;font-size:.78rem}
+</style>
+</head>
+<body>
+<h1>Bloom Café — Sample Social Creatives</h1>
+<p class="sub">Instagram post mockups + flyer concept (HTML/CSS stand-ins for Canva designs)</p>
+
+<div class="grid">
+  <div>
+    <div class="post p1"><div class="pad">
+      <div class="brandline">☕ Bloom Café</div>
+      <div class="cup">☕</div>
+      <h2>A latte in<br>15 seconds</h2>
+      <p>From bean to bloom — watch your morning come together.</p>
+    </div></div>
+    <div class="label">Reel cover — "Educate"</div>
+  </div>
+
+  <div>
+    <div class="post p2"><div class="pad">
+      <div class="brandline" style="color:var(--brown)">☕ Bloom Café</div>
+      <span class="chip" style="margin-top:.6rem">STUDENT TUESDAYS</span>
+      <div class="tagwrap">
+        <div class="big">20% OFF</div>
+        <h2>Show your student ID</h2>
+      </div>
+    </div></div>
+    <div class="label">Offer post — "Promote"</div>
+  </div>
+
+  <div>
+    <div class="post p3"><div class="pad">
+      <div class="brandline">☕ Bloom Café</div>
+      <div class="cup">🪴</div>
+      <h2>Good coffee,<br>better corners</h2>
+      <p>Where do you sit? 👇 Comment your favourite spot.</p>
+    </div></div>
+    <div class="label">Engagement post — "Engage"</div>
+  </div>
+
+  <div>
+    <div class="flyer">
+      <div class="top"><div class="cup">☕</div><h2>Bloom Café</h2><div style="font-size:.8rem;opacity:.85">Specialty coffee · Tirana</div></div>
+      <div class="mid">
+        <div class="offer">Grand Re-Opening Week</div>
+        <p style="font-size:.85rem;color:#6b5d4d">Mention this flyer and get a free size upgrade on any drink, all week.</p>
+        <div class="pill">FREE UPGRADE ☕</div>
+        <p style="font-size:.78rem;color:#6b5d4d">Rruga e Kavajës 12 · Mon–Sun 7:00–20:00</p>
+      </div>
+      <div class="foot">@BloomCafe · #BloomMoments</div>
+    </div>
+    <div class="label">Flyer concept</div>
+  </div>
+</div>
+</body>
+</html>

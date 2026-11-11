@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PixelForge — Free Website Audit</title>
+<meta name="description" content="Get a free 15-minute website audit and a 1-page action plan from PixelForge." />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--bg:#0b1020;--card:#141a2e;--line:#243049;--text:#eef2fb;--muted:#9aa6c2;--brand:#5b8cff;--accent:#22d3ee;--ok:#34d399;--radius:16px;--maxw:1080px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em}
+  .container{width:min(var(--maxw),92%);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--brand),#7c3aed);color:#fff;border:0;padding:.9rem 1.7rem;border-radius:12px;font-weight:700;font-family:inherit;cursor:pointer;font-size:1rem}
+  nav{position:sticky;top:0;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .brand{font-family:'Space Grotesk';font-weight:700;font-size:1.3rem}
+  .brand b{color:var(--accent)}
+  /* hero */
+  .hero{text-align:center;padding:4rem 0 3rem}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+  .hero h1{font-size:clamp(2.1rem,5.5vw,3.6rem);font-weight:700;max-width:16ch;margin:1rem auto;line-height:1.05}
+  .hero p{color:var(--muted);font-size:1.15rem;max-width:52ch;margin:0 auto 1.8rem}
+  .proof{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;color:var(--muted)}
+  .proof b{color:var(--text);font-size:1.5rem;font-family:'Space Grotesk';display:block}
+  section{padding:3.5rem 0}
+  .sec-head{text-align:center;max-width:620px;margin:0 auto 2.2rem}
+  .sec-head h2{font-size:clamp(1.6rem,4vw,2.3rem)}
+  .sec-head p{color:var(--muted);margin-top:.5rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem}
+  .card .ic{font-size:1.8rem}
+  .card h3{margin:.6rem 0 .4rem;font-size:1.15rem}
+  .card p{color:var(--muted);font-size:.92rem}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;counter-reset:s}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;top:1rem;right:1.2rem;font-family:'Space Grotesk';font-size:2rem;color:var(--line);font-weight:700}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+  .quote p{font-size:.95rem}.quote span{color:var(--muted);font-size:.85rem;display:block;margin-top:.7rem}
+  /* form */
+  .lead{background:linear-gradient(135deg,#141a2e,#1a1140);border:1px solid var(--line);border-radius:22px;padding:2.4rem;max-width:620px;margin:0 auto;text-align:center}
+  .lead h2{font-size:1.8rem}
+  .lead p{color:var(--muted);margin:.5rem 0 1.4rem}
+  form{display:grid;gap:.8rem;text-align:left}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+  label{font-size:.85rem;font-weight:600;margin-bottom:.25rem;display:block}
+  input,textarea,select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.75rem .9rem;color:var(--text);font-family:inherit}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--brand)}
+  .note{min-height:1.3em;font-size:.9rem;margin-top:.4rem}
+  .note.ok{color:var(--ok)}.note.err{color:#f87171}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.7rem}
+  .faq summary{cursor:pointer;font-weight:600}
+  .faq p{color:var(--muted);margin-top:.6rem;font-size:.92rem}
+  footer{border-top:1px solid var(--line);padding:1.6rem 0;text-align:center;color:var(--muted);font-size:.9rem}
+  @media(max-width:620px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <div class="brand">Pixel<b>Forge</b></div>
+  <a href="#audit" class="btn" style="padding:.55rem 1.1rem;font-size:.9rem">Free audit</a>
+</div></nav>
+
+<header class="hero container">
+  <span class="eyebrow">Free website audit</span>
+  <h1>Your website should be winning you customers.</h1>
+  <p>Get a free 15-minute audit and a 1-page action plan showing exactly what to fix to turn visitors into enquiries.</p>
+  <a href="#audit" class="btn">Get my free audit →</a>
+  <div class="proof"><div><b>120+</b>sites improved</div><div><b>4.9★</b>client rating</div><div><b>+30%</b>avg. enquiries</div></div>
+</header>
+
+<section>
+  <div class="container sec-head"><h2>Is your site quietly losing you business?</h2><p>Most small-business sites lose visitors in the first 5 seconds. Here's where it usually goes wrong — and how we fix it.</p></div>
+  <div class="container cards">
+    <div class="card"><div class="ic">🐌</div><h3>Slow loading</h3><p>Every extra second drops conversions. We find and fix the bottlenecks.</p></div>
+    <div class="card"><div class="ic">📱</div><h3>Not mobile-ready</h3><p>Most visits are on phones. We make it flawless on every screen.</p></div>
+    <div class="card"><div class="ic">🎯</div><h3>Weak call-to-action</h3><p>Unclear next steps = lost leads. We sharpen your path to enquiry.</p></div>
+    <div class="card"><div class="ic">🔍</div><h3>Invisible on Google</h3><p>We spot the SEO basics you're missing so customers can find you.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="container sec-head"><h2>How it works</h2></div>
+  <div class="container steps">
+    <div class="step"><h3>Request</h3><p>Fill the short form with your website and biggest challenge.</p></div>
+    <div class="step"><h3>We audit</h3><p>Within 48h we review speed, mobile, UX, copy and SEO.</p></div>
+    <div class="step"><h3>You get a plan</h3><p>A clear 1-page action plan — yours to keep, no strings.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="container sec-head"><h2>What clients say</h2></div>
+  <div class="container quotes">
+    <div class="quote"><p>"The audit alone found 3 things costing us enquiries. We fixed them in a week."</p><span>— Marked, café owner</span></div>
+    <div class="quote"><p>"Clear, no jargon, actually useful. We hired them after."</p><span>— Elira, boutique</span></div>
+    <div class="quote"><p>"Our bookings went up noticeably after the redesign."</p><span>— Andi, gym</span></div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="container">
+    <div class="lead">
+      <h2>Claim your free website audit</h2>
+      <p>No cost, no obligation. Just a clear plan to a better site.</p>
+      <form id="leadForm">
+        <div class="row">
+          <div><label>Name *</label><input name="name" required placeholder="Your name" /></div>
+          <div><label>Email *</label><input name="email" type="email" required placeholder="you@email.com" /></div>
+        </div>
+        <div><label>Website URL</label><input name="url" placeholder="https://yoursite.com" /></div>
+        <div><label>Biggest challenge</label>
+          <select name="challenge"><option>Not enough enquiries</option><option>Site feels outdated</option><option>Slow / not mobile-friendly</option><option>Can't be found on Google</option><option>Other</option></select>
+        </div>
+        <button class="btn" type="submit" style="width:100%;justify-content:center;margin-top:.4rem">Send me my free audit</button>
+        <p class="note" id="note" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container" style="max-width:720px">
+    <div class="sec-head"><h2>Questions</h2></div>
+    <details><summary>Is it really free?</summary><p>Yes — the 15-minute audit and the 1-page action plan are completely free. You're free to act on it yourself or with us.</p></details>
+    <details><summary>How long does it take?</summary><p>You'll get your action plan within 48 hours of submitting the form.</p></details>
+    <details><summary>Do I have to hire you after?</summary><p>No. There's no obligation. If you'd like help implementing, we'll share options — but the plan is yours either way.</p></details>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> PixelForge Web Studio · Free website audit landing page · Sqrock IT Internship (demo)</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const f=document.getElementById('leadForm'),n=document.getElementById('note');
+f.addEventListener('submit',e=>{e.preventDefault();
+  const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim());
+  if(!f.name.value.trim()||!ok){n.textContent='Please enter your name and a valid email.';n.className='note err';return;}
+  n.textContent=`Thanks ${f.name.value.trim()}! Your free audit request is in — we'll email ${f.email.value.trim()} within 48 hours.`;n.className='note ok';f.reset();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Verdé — Homepage Concept</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--fern:#3f7d4e;--forest:#24402b;--terra:#c8724a;--cream:#f3efe6;--sage:#cdd9c3;--radius:16px;--maxw:1080px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--forest);line-height:1.65}
+  h1,h2,h3{font-family:'Fraunces',serif}
+  .container{width:min(var(--maxw),92%);margin-inline:auto}
+  .btn{display:inline-flex;gap:.5rem;background:var(--fern);color:var(--cream);border:0;padding:.85rem 1.6rem;border-radius:999px;font-weight:600;font-family:inherit;cursor:pointer;text-decoration:none}
+  .btn--terra{background:var(--terra)}
+  nav{display:flex;justify-content:space-between;align-items:center;height:70px}
+  .brand{font-family:'Fraunces';font-weight:700;font-size:1.4rem}
+  .nav-links{display:flex;gap:1.4rem}.nav-links a{color:var(--forest);text-decoration:none;font-weight:500}
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:3rem 0}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.02}
+  .hero p{color:#5a5547;font-size:1.1rem;margin:1rem 0 1.6rem;max-width:42ch}
+  .hero-art{aspect-ratio:1;border-radius:28px;background:radial-gradient(circle at 40% 35%,var(--sage),var(--fern));display:grid;place-items:center;font-size:7rem}
+  .tagstrip{background:var(--forest);color:var(--cream);padding:.7rem 0;text-align:center;letter-spacing:.2em;font-size:.85rem}
+  section{padding:3.5rem 0}
+  .sh{text-align:center;margin-bottom:2rem}.sh h2{font-size:2rem}
+  .cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem}
+  .cat{background:#fff;border:1px solid var(--sage);border-radius:var(--radius);padding:1.5rem;text-align:center}
+  .cat .e{font-size:2.4rem}.cat h3{margin:.5rem 0 .3rem}.cat p{color:#6f6a5c;font-size:.9rem}
+  .promise{background:var(--sage);border-radius:24px;padding:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem;text-align:center}
+  .promise .e{font-size:1.8rem}.promise b{display:block;font-family:'Fraunces';margin:.4rem 0 .2rem}
+  .promise p{color:#4a4638;font-size:.9rem}
+  footer{background:var(--forest);color:var(--cream);padding:2rem 0;text-align:center}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}.hero-art{order:-1}.nav-links{display:none}}
+</style>
+</head>
+<body>
+<div class="container"><nav>
+  <div class="brand">🌱 Verdé</div>
+  <div class="nav-links"><a href="#">Shop</a><a href="#">Care guide</a><a href="#">About</a><a href="#">Contact</a></div>
+  <a href="#" class="btn">Shop plants</a>
+</nav></div>
+
+<header class="container hero">
+  <div>
+    <h1>Grow easy.</h1>
+    <p>Beautiful, low-maintenance plants with friendly, no-jargon care advice. Perfect for first-time plant parents.</p>
+    <a href="#" class="btn">Shop the collection</a>
+  </div>
+  <div class="hero-art">🪴</div>
+</header>
+
+<div class="tagstrip">EASY-CARE · LOCALLY GROWN · FRIENDLY ADVICE · GIFT-READY</div>
+
+<section>
+  <div class="container sh"><h2>Find your green</h2></div>
+  <div class="container cats">
+    <div class="cat"><div class="e">🌿</div><h3>Beginner-friendly</h3><p>Almost impossible to kill.</p></div>
+    <div class="cat"><div class="e">☀️</div><h3>Low light</h3><p>Happy in any corner.</p></div>
+    <div class="cat"><div class="e">🎁</div><h3>Gift sets</h3><p>Ready to give, with a note.</p></div>
+    <div class="cat"><div class="e">🪴</div><h3>Pots &amp; care</h3><p>Everything to get started.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="container promise">
+    <div><div class="e">🌱</div><b>Grow easy</b><p>Plants matched to your space and light.</p></div>
+    <div><div class="e">💬</div><b>Real advice</b><p>Free care tips, no plant Latin.</p></div>
+    <div><div class="e">🚚</div><b>Local delivery</b><p>Across Tirana, carefully packed.</p></div>
+  </div>
+</section>
+
+<footer><div class="container">🌱 Verdé — Grow easy. · Homepage concept by Ajvi Dylgjeri · Sqrock IT Internship</div></footer>
+</body>
+</html>
